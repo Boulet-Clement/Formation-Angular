@@ -343,6 +343,19 @@
   </div>
 
   <app-mon-premier></app-mon-premier>
+  <div class="container">
+    <h2>Mes appareils </h2>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-group">
+          <app-appareil></app-appareil>
+          <app-appareil></app-appareil>
+          <app-appareil></app-appareil>
+        </ul>
+        <button class="btn btn-success" [disabled]="!isAuth">Tout allumer</button>
+      </div>
+    </div>
+  </div>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>
