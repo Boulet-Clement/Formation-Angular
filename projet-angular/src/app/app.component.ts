@@ -10,6 +10,8 @@ export class AppComponent {
 
   isAuth = false;
 
+  lastUpdate = new Date();
+
   appareils = [
     {
       name:'Machine à laver',
@@ -22,7 +24,7 @@ export class AppComponent {
     {
       name:'Ordinateur',
       status: 'éteint'
-    },
+    }
   ]
 
   constructor(){
