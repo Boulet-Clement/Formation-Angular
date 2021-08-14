@@ -348,9 +348,11 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="list-group">
-          <app-appareil appareilName="Machine à laver"></app-appareil>
-          <app-appareil appareilName="Télévision"></app-appareil>
-          <app-appareil appareilName="Ordinateur"></app-appareil>
+          <app-appareil 
+            *ngFor="let appareil of appareils" 
+            [appareilName]="appareil.name"
+            [appareilStatus]="appareil.status"
+          ></app-appareil>
         </ul>
         <button class="btn btn-success" 
                 [disabled]="!isAuth"

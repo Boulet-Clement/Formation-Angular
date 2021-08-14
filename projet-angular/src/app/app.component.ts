@@ -9,6 +9,22 @@ export class AppComponent {
   title = 'projet-angular';
 
   isAuth = false;
+
+  appareils = [
+    {
+      name:'Machine à laver',
+      status: 'éteint'
+    },
+    {
+      name:'Télévision',
+      status: 'allumé'
+    },
+    {
+      name:'Ordinateur',
+      status: 'éteint'
+    },
+  ]
+
   constructor(){
     setTimeout(
       ()=> {
