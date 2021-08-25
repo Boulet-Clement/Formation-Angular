@@ -31,6 +31,7 @@ export class AppareilViewComponent implements OnInit {
       }
     );
     this.appareilService.emitAppareilSubject();
+    this.appareilService.getAppareilsFromServeur();
   }
 
   onAllumer(){
@@ -38,6 +39,14 @@ export class AppareilViewComponent implements OnInit {
   }
   onEteindre(){
     this.appareilService.switchOffAll();
+  }
+
+  onSave(){
+    this.appareilService.saveAppareilsToServeur();
+  }
+
+  onFetch(){
+    this.appareilService.getAppareilsFromServeur();
   }
 
 }
